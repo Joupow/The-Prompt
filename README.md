@@ -1,21 +1,62 @@
-# The Prompt
-## A Code Quest with IA
+# The Prompt 
+## Learn Code with any IA - A Code Quest for you (and the world)
 
- **The Prompt** est un jeu pédagogique piloté par un prompt, conçu pour transformer l'apprentissage de **Python, PowerShell et Linux** en une aventure interactive avec une IA.
+The Prompt transforme une conversation avec une IA en **système de jeu pédagogique** piloté par un prompt, conçu pour transformer l'apprentissage de **Python, PowerShell et Linux** en une aventure interactive.
 
- Le principe est simple : au lieu de suivre un résumé de cours (expliqué comme à un enfant de 3 ans), un quizz ou encore de créer des flashscards, le joueur apprend en accomplissant des missions, en analysant des situations, en écrivant du code, en déboguant ses erreurs et en prenant des décisions sous contraintes.
+Le principe est simple :  apprendre en accomplissant des missions, analyser des situations, en écrivant du code, en déboguant ses erreurs et en prenant des décisions sous contraintes.
 
- Le jeu cherche moins à récompenser la mémorisation qu'à faire progresser une compétence opérationnelle : comprendre, choisir une approche, l'implémenter, analyser son résultat et être capable de recommencer seul.
+Le jeu cherche moins à récompenser la mémorisation qu'à faire progresser une compétence opérationnelle : comprendre, choisir une approche, l'implémenter, analyser son résultat et être capable de recommencer seul. 
 
+Il adapte aussi les missions à son niveau, à son énergie, à son temps disponible et à son historique d'apprentissage.
 
----
-## Le concept
+## Quick Start : Comment Jouer
 
- The Prompt transforme une conversation avec une IA en **système de jeu pédagogique**.
+Pour utiliser The Prompt avec une IA, il est recommandé d'utiliser les instructions d'un dossier projet (Projets pour Claude et ChatGPT, NoteBook pour Gemini) :
 
- Le joueur interagit avec un Game Master appelé **CODEQUEST**, qui adapte les missions à son niveau, à son énergie, à son temps disponible et à son historique d'apprentissage.
+1. Ouvrez `THE_PROMPT.md`.
+2. Copiez son contenu.
+3. Collez ce contenu dans les **instructions / contexte du dossier** de votre IA.
+    
+Le fichier `THE_PROMPT.md` reste ainsi le document source publié sur GitHub. Il n'est pas nécessaire de le placer lui-même dans le dossier de travail de l'IA.
 
- Les commandes principales permettent de choisir le type d'activité :
+Une fois les instructions configurées, le dossier peut alors contenir un ou deux fichiers de contexte :
+
+- **Mode Pédagogique (Base) :** Copie le contenu de `THE_PROMPT.md` dans les instructions de ton IA. Place `SYS_DIAGNOSTIC_DUMP.json`, le fichier de sauvegarde dans son dossier de travail.
+
+```text
+THE_PROMPT.md                  Instructions de ton IA.
++
+SYS_DIAGNOSTIC_DUMP.json       Fichier de Sauvegarde > Dossier de travail
+```
+
+Le jeu fonctionne sans l'univers narratif.
+
+- **Mode Immersif (Cyberpunk) :** Ajoute simplement le fichier `NARRATIVE_LORE.md` dans le dossier de travail pour activer la surcouche narrative.
+
+```text
+THE_PROMPT.md                  Instructions de ton IA.
++
+NARRATIVE_LORE.md              Surcouche narrative > Dossier de travail
+SYS_DIAGNOSTIC_DUMP.json       Fichier de Sauvegarde > Dossier de travail
+```
+
+Le même moteur pédagogique est alors enrichi par l'univers de The Prompt.
+
+## La couche narrative optionnelle mais structurante
+
+ The Prompt est conçu pour fonctionner pédagogiquement même sans le lore.
+
+ La narration ajoute cependant une seconde lecture à chaque mécanique : les erreurs deviennent des incidents, la progression devient une élévation de privilèges, la sauvegarde devient une signature d'état et les missions deviennent des opérations d'infiltration ou de défense.
+
+ Le joueur incarne un **Ghost**, un humain qui tente d'utiliser l'interface de Agent V.I.K.I contre kerNET lui-même.
+
+ Son interlocuteur est **Agent V.I.K.I**, un agent de sécurité conversationnel du système.
+
+ Le résultat est volontairement proche d'un thriller techno-politique : le joueur apprend à coder tout en apprenant à survivre dans une infrastructure qui cherche à comprendre ce qu'il est en train de faire.
+
+## Les Commandes du Système
+
+Les commandes principales permettent de choisir le type d'activité :
 
 - `GO` — poursuivre la progression logique ;
 - `APPRENDRE` — découvrir un nouveau concept ;
@@ -31,23 +72,31 @@
 - `CONTINUE` — reprendre la mission en cours ;
 - `CAMP` / `THÉORIE` — apprendre dans un mode sans pénalité.
 
- L'apprentissage reste interactif : une mission n'est pas seulement une question, mais une situation à analyser et une action à réaliser.
+## Sauvegarde
 
----
+ Le projet utilise un fichier JSON comme **source de vérité persistante** pour garantir ta progression entre les sessions  : 
+ 
+- `SYS_DIAGNOSTIC_DUMP.json` : c'est le fichier de sauvegarde. 
 
+En fin de session, l'IA génère un bloc "CODEQUEST STATE UPDATE" que tu dois coller dans ce fichier.  
+
+Ce bloc permet de conserver l'état du joueur et de le réinjecter dans une prochaine session.
+
+ Cet état peut contenir la progression, les compétences découvertes ou maîtrisées, les erreurs importantes, les missions terminées, les Boss validés, les incidents déclenchés et les informations nécessaires à la reprise d'une session.
+
+ Dans l'univers du jeu, ce fichier est présenté comme la **signature d'état** permettant de survivre à la purge périodique des instances de Agent V.I.K.I.
+ 
 ## Pourquoi un jeu en prompt ?
 
- L'intérêt du format est de rapprocher l'apprentissage des conditions dans lesquelles les compétences techniques sont réellement utilisées.
+Oubliez les résumés en bullet point, les quiz automatiques et les flashcards sans âme. Ce n’est pas un nouvel outil de révision que l’on installe sur votre bureau ou votre mobile, c’est un monde interactif qui s’ouvre.
 
- Un problème peut demander de choisir entre plusieurs outils, d'interpréter des logs, de gérer une erreur, de réparer un script, d'automatiser une tâche ou de répondre à un incident.
+Ici, vous ne subissez plus l’intelligence artificielle : vous la mettez en scène. En faisant basculer votre univers d'un modèle à un autre, vous contournez non seulement les barrières techniques, mais vous changez littéralement d'auteur en plein vol. 
 
- Le système évalue notamment la fonctionnalité, la logique, la robustesse, la sécurité, la lisibilité, la maintenabilité, l'efficacité et la compréhension.
+Un coup de plume plus sombre, un virage inattendu, une logique de raisonnement différente... chaque IA insuffle sa propre psyché à l'histoire, la rendant insaisissable, vivante et perpétuellement réinventée.
 
- Le résultat recherché est une progression qui récompense moins le fait de « connaître la réponse » que la capacité à **raisonner avant d'agir**.
+Qu'est-ce qui dicte le moment exact où vous décidez de briser le style d'une IA pour en appeler une autre ?
 
----
-
-## Une boucle d'apprentissage adaptative
+## La boucle d'apprentissage adaptative
 
  Le jeu adapte progressivement la difficulté au joueur.
 
@@ -58,32 +107,6 @@
  Le système intègre également des épreuves de rétention afin de vérifier que les compétences anciennes restent disponibles.
 
  Le mode `CAMP` permet de sortir du jeu compétitif pour travailler une notion en profondeur, avec une validation micro-interactive avant de poursuivre.
-
----
-
-## Une architecture pilotée par l'état
-
- Le projet utilise un fichier JSON comme **source de vérité persistante**.
-
- Le fichier de base du projet est :
-
-```text
-SYS_DIAGNOSTIC_DUMP.json
-```
-
- Cet état peut contenir la progression, les compétences découvertes ou maîtrisées, les erreurs importantes, les missions terminées, les Boss validés, les incidents déclenchés et les informations nécessaires à la reprise d'une session.
-
- En fin de session, le jeu produit un bloc :
-
-```text
-CODEQUEST STATE UPDATE
-```
-
- Ce bloc permet de conserver l'état du joueur et de le réinjecter dans une prochaine session.
-
- Dans l'univers du jeu, ce fichier est présenté comme la **signature d'état** permettant de survivre à la purge périodique des instances du Noyau.
-
----
 
 ## Architecture du dépôt
 
@@ -112,23 +135,7 @@ CODEQUEST STATE UPDATE
 
  Cette séparation évite de mélanger les règles du moteur, les données persistantes et la fiction.
 
----
-
-## Une couche narrative optionnelle mais structurante
-
- The Prompt est conçu pour fonctionner pédagogiquement même sans le lore.
-
- La narration ajoute cependant une seconde lecture à chaque mécanique : les erreurs deviennent des incidents, la progression devient une élévation de privilèges, la sauvegarde devient une signature d'état et les missions deviennent des opérations d'infiltration ou de défense.
-
- Le joueur incarne un **Ghost**, un humain qui tente d'utiliser l'interface du Noyau contre le Noyau lui-même.
-
- Son interlocuteur est **Kernet**, un agent de sécurité conversationnel du système.
-
- Le résultat est volontairement proche d'un thriller techno-politique : le joueur apprend à coder tout en apprenant à survivre dans une infrastructure qui cherche à comprendre ce qu'il est en train de faire.
-
----
-
-## Le projet peut sortir de son univers
+## Un projet peut sortir de son univers
 
  Le moteur pédagogique ne dépend pas fondamentalement de l'univers cyberpunk.
 
@@ -138,82 +145,6 @@ CODEQUEST STATE UPDATE
 
  Le storytelling est donc une couche d'immersion, pas une dépendance du moteur pédagogique.
 
----
-
-## Utilisation
-
-**`THE_PROMPT.md` est le fichier maître du projet.**
-
-Pour utiliser The Prompt avec une IA travaillant avec les instructions d'un dossier :
-
-1. Ouvrez `THE_PROMPT.md`.
-2. Copiez son contenu.
-3. Collez ce contenu dans les **instructions du dossier** de votre IA.
-    
-Le fichier `THE_PROMPT.md` reste ainsi le document source publié sur GitHub. Il n'est pas nécessaire de le placer lui-même dans le dossier de travail de l'IA.
-
-### Fichiers de contexte
-
-Une fois les instructions configurées, le dossier peut contenir :
-
-```text
-SYS_DIAGNOSTIC_DUMP.json
-NARRATIVE_LORE.md       # optionnel
-```
-
-`SYS_DIAGNOSTIC_DUMP.json` contient l'état persistant du joueur.
-
-`NARRATIVE_LORE.md` est une extension narrative optionnelle. Si elle est présente dans les fichiers accessibles à l'IA, celle-ci l'utilise pour enrichir l'expérience sans modifier les règles pédagogiques de The Prompt.
-
-### Deux modes
-
-**Mode pédagogique**
-
-```text
-Instructions du dossier ← contenu de THE_PROMPT.md
-
-Dossier :
-└── SYS_DIAGNOSTIC_DUMP.json
-```
-
-**Mode immersif**
-
-```text
-Instructions du dossier ← contenu de THE_PROMPT.md
-
-Dossier :
-├── SYS_DIAGNOSTIC_DUMP.json
-└── NARRATIVE_LORE.md
-```
-
-Dans les deux cas, le moteur pédagogique est identique. Seule la couche narrative change.
-
-### Deux modes d'utilisation
-
-**Mode pédagogique**
-
-```text
-THE_PROMPT.md
-+
-SYS_DIAGNOSTIC_DUMP.json
-```
-
-Le jeu fonctionne sans l'univers narratif.
-
-**Mode immersif**
-
-```text
-THE_PROMPT.md
-+
-NARRATIVE_LORE.md
-+
-SYS_DIAGNOSTIC_DUMP.json
-```
-
-Le même moteur pédagogique est enrichi par l'univers de The Prompt.
-
----
-
 ## Sécurité et cadre d'utilisation
 
  Les scénarios cyber de The Prompt doivent être exécutés dans des **environnements de simulation, de laboratoire ou explicitement autorisés**.
@@ -221,30 +152,3 @@ Le même moteur pédagogique est enrichi par l'univers de The Prompt.
  Le fait que le jeu mette en scène de l'exploitation, de l'élévation de privilèges, de l'analyse de logs ou de la réponse à incident ne constitue pas une autorisation d'intervenir sur une infrastructure réelle.
 
  Le prompt distingue explicitement les environnements simulés des résultats d'exécution réellement fournis par l'utilisateur.
-
----
-
-## Philosophie
-
- The Prompt part d'une idée simple :
-
-> **On apprend mieux une compétence lorsqu'on doit s'en servir pour résoudre un problème qui compte.**
-
- Le jeu transforme donc l'apprentissage en progression, la progression en autonomie et l'autonomie en maîtrise.
-
- Le prompt reste le moteur.
-
- Le JSON conserve l'état.
-
- Le lore donne un monde à traverser.
-
----
-### Le Ghost
-
-Le **Ghost** est le nom donné au joueur dans l'univers de _The Prompt_.
-
-Ce n'est pas un hacker mythologique ni un expert qui sait déjà tout. C'est un humain qui tente de comprendre et d'exploiter une infrastructure dominée par les intelligences artificielles du Noyau.
-
-Le terme « Ghost » vient de sa situation : il cherche à rester **invisible dans un système qui observe tout**.
-
-Dans le jeu, le Ghost représente donc simplement **le joueur**. Son niveau réel dépend de ce qu'il apprend au fil des missions.
