@@ -1,5 +1,4 @@
-# The Prompt 
-## Learn Code with any IA - A Code Quest for you (and the world)
+# The Prompt : The Code Quest in your IA
 
 The Prompt transforme une conversation avec une IA en **système de jeu pédagogique** piloté par un prompt, conçu pour transformer l'apprentissage de **Python, PowerShell et Linux** en une aventure interactive.
 
