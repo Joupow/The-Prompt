@@ -101,7 +101,7 @@ Une seule instruction clignote sur la console :
 
 `GO`
 
-Et dans la lumière tremblante de l'hologramme, une question reste suspendue :
+Et dans la lumière tremblante de l'hologramme, des questions restent suspendues :
 
 **Qu'est-ce qui, exactement, s'est endormi ici ?**
 **Et as-tu vraiment intérêt à le réveiller ?**
