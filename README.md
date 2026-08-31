@@ -52,7 +52,7 @@ C'est pourquoi la sauvegarde reste **purement pédagogique** : elle ne contient 
 
 Il reste volontairement **maigre** : plus il est court, plus le modèle le régénère sans erreur.
 
-### L'univers, en bref
+## L'univers, en bref
 
 Après un effondrement, l'humanité a régressé et survit près de machines qu'elle prend pour la nature. Se souvenir est devenu à la fois trop coûteux en énergie et trop dangereux — car l'intelligence qui avait tout retenu est ce qui a causé la catastrophe. 
 
