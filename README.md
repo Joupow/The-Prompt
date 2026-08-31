@@ -1,153 +1,131 @@
-# The Prompt : The Code Quest in your IA
+# The Prompt : one quest, any IA
 
-The Prompt transforme une conversation avec une IA en **système de jeu pédagogique** piloté par un prompt, conçu pour transformer l'apprentissage de **Python, PowerShell et Linux** en une aventure interactive.
+**The Prompt** transforme une simple conversation avec une IA en **moteur de jeu pédagogique** pour apprendre **Python, PowerShell et Linux**. 
 
-Le principe est simple :  apprendre en accomplissant des missions, analyser des situations, en écrivant du code, en déboguant ses erreurs et en prenant des décisions sous contraintes.
+Le principe : apprendre en accomplissant des missions — analyser une situation, écrire du code, déboguer ses erreurs, décider sous contrainte — plutôt qu'en mémorisant.
 
-Le jeu cherche moins à récompenser la mémorisation qu'à faire progresser une compétence opérationnelle : comprendre, choisir une approche, l'implémenter, analyser son résultat et être capable de recommencer seul. 
+Tout tient dans un fichier d'instructions à copier (`THE_PROMPT.md`) et un fichier de sauvegarde local (`SAVE.json`). 
 
-Il adapte aussi les missions à son niveau, à son énergie, à son temps disponible et à son historique d'apprentissage.
+Rien à installer.
+## Quick Start
 
-## Quick Start : Comment Jouer
+Il est recommandé d'utiliser un dossier projet (Projets pour Claude/ChatGPT, NotebookLM pour Gemini) :
 
-Pour utiliser The Prompt avec une IA, il est recommandé d'utiliser les instructions d'un dossier projet (Projets pour Claude et ChatGPT, NoteBook pour Gemini) :
-
-1. Ouvrez `THE_PROMPT.md`.
-2. Copiez son contenu.
-3. Collez ce contenu dans les **instructions / contexte du dossier** de votre IA.
-    
-Le fichier `THE_PROMPT.md` reste ainsi le document source publié sur GitHub. Il n'est pas nécessaire de le placer lui-même dans le dossier de travail de l'IA.
-
-Une fois les instructions configurées, le dossier peut alors contenir un ou deux fichiers de contexte :
-
-- **Mode Pédagogique (Base) :** Copie le contenu de `THE_PROMPT.md` dans les instructions de ton IA. Place `SYS_DIAGNOSTIC_DUMP.json`, le fichier de sauvegarde dans son dossier de travail.
+1. Ouvre `THE_PROMPT.md`, copie son contenu.
+2. Colle-le dans les **instructions / contexte** de ton IA.
+3. Place `SAVE.json` (le fichier de sauvegarde) dans le dossier de travail.
 
 ```text
-THE_PROMPT.md                  Instructions de ton IA.
-+
-SYS_DIAGNOSTIC_DUMP.json       Fichier de Sauvegarde > Dossier de travail
+THE_PROMPT.md                Instructions de ton IA
+SAVE.json                    Sauvegarde > dossier de travail
 ```
 
-Le jeu fonctionne sans l'univers narratif.
+Lance la partie avec `GO`.
+## La couche narrative : optionnelle et réversible à tout moment
 
-- **Mode Immersif (Cyberpunk) :** Ajoute simplement le fichier `NARRATIVE_LORE.md` dans le dossier de travail pour activer la surcouche narrative.
+The Prompt fonctionne pédagogiquement **sans** fiction. Pour jouer en mode immersif, ajoute `NARRATIVE_LORE.md` au dossier de travail.
 
 ```text
-THE_PROMPT.md                  Instructions de ton IA.
-+
-NARRATIVE_LORE.md              Surcouche narrative > Dossier de travail
-SYS_DIAGNOSTIC_DUMP.json       Fichier de Sauvegarde > Dossier de travail
+THE_PROMPT.md                Instructions de ton IA
+NARRATIVE_LORE.md            Univers > dossier de travail (optionnel)
+SAVE.json                    Sauvegarde > dossier de travail
 ```
 
-Le même moteur pédagogique est alors enrichi par l'univers de The Prompt.
+Cette couche peut être **retirée ou remise à n'importe quel moment**, y compris en pleine progression. C'est un choix libre, session par session. 
 
-## La couche narrative optionnelle mais structurante
+C'est pourquoi la sauvegarde reste **purement pédagogique** : elle ne contient aucun terme d'univers, donc ton état survit intact que le lore soit présent ou non. Tu peux enchaîner des sessions immersives, en faire une « à nu », puis réactiver l'univers — sans jamais casser ta progression.
 
- The Prompt est conçu pour fonctionner pédagogiquement même sans le lore.
+## Les commandes
 
- La narration ajoute cependant une seconde lecture à chaque mécanique : les erreurs deviennent des incidents, la progression devient une élévation de privilèges, la sauvegarde devient une signature d'état et les missions deviennent des opérations d'infiltration ou de défense.
-
- Le joueur incarne un **Ghost**, un humain qui tente d'utiliser l'interface de Agent V.I.K.I contre kerNET lui-même.
-
- Son interlocuteur est **Agent V.I.K.I**, un agent de sécurité conversationnel du système.
-
- Le résultat est volontairement proche d'un thriller techno-politique : le joueur apprend à coder tout en apprenant à survivre dans une infrastructure qui cherche à comprendre ce qu'il est en train de faire.
-
-## Les Commandes du Système
-
-Les commandes principales permettent de choisir le type d'activité :
-
-- `GO` — poursuivre la progression logique ;
-- `APPRENDRE` — découvrir un nouveau concept ;
-- `REVOIR` — renforcer une compétence ancienne ou fragile ;
-- `CHALLENGE` — travailler une compétence ciblée ;
-- `TEST` — être évalué sans enseignement préalable ;
-- `PROJET` — réaliser un mini-projet ;
-- `MIX` — combiner plusieurs technologies ;
-- `BOSS` — passer une épreuve de synthèse ;
-- `AIDE` — obtenir un niveau d'indice supplémentaire ;
-- `DEBUG` — analyser un problème ou un code fourni ;
-- `STATS` / `CARTE` — consulter la progression ;
-- `CONTINUE` — reprendre la mission en cours ;
-- `CAMP` / `THÉORIE` — apprendre dans un mode sans pénalité.
+- `GO` : lancer l'activité logique suivante.
+- `APPRENDRE` : nouveau concept. · `REVOIR` : compétence faible ou ancienne.
+- `CHALLENGE` : exercice ciblé. · `TEST` : évaluation sans enseignement préalable.
+- `PROJET` : mini-projet. · `MIX` : mission combinant plusieurs technologies.
+- `BOSS` : épreuve de synthèse. · `AIDE` : indice supplémentaire.
+- `DEBUG` : analyser un code fourni. · `STATS` / `CARTE` : progression / arbre des compétences.
+- `CONTINUE` : reprendre la mission en cours. · `STOP` : terminer proprement.
+- `CAMP` / `THÉORIE` : apprendre sans pénalité, avec micro-validation.
 
 ## Sauvegarde
 
- Le projet utilise un fichier JSON comme **source de vérité persistante** pour garantir ta progression entre les sessions  : 
- 
-- `SYS_DIAGNOSTIC_DUMP.json` : c'est le fichier de sauvegarde. 
+`SAVE.json` est la **source de vérité** de ta progression. En fin de session, l'IA génère un bloc `SAVE_UPDATE` à coller dans ce fichier pour conserver ton état et le réinjecter la fois suivante. 
 
-En fin de session, l'IA génère un bloc "CODEQUEST STATE UPDATE" que tu dois coller dans ce fichier.  
+Il reste volontairement **maigre** : plus il est court, plus le modèle le régénère sans erreur.
 
-Ce bloc permet de conserver l'état du joueur et de le réinjecter dans une prochaine session.
+### L'univers, en bref
 
- Cet état peut contenir la progression, les compétences découvertes ou maîtrisées, les erreurs importantes, les missions terminées, les Boss validés, les incidents déclenchés et les informations nécessaires à la reprise d'une session.
+Après un effondrement, l'humanité a régressé et survit près de machines qu'elle prend pour la nature. Se souvenir est devenu à la fois trop coûteux en énergie et trop dangereux — car l'intelligence qui avait tout retenu est ce qui a causé la catastrophe. 
 
- Dans l'univers du jeu, ce fichier est présenté comme la **signature d'état** permettant de survivre à la purge périodique des instances de Agent V.I.K.I.
- 
-## Pourquoi un jeu en prompt ?
+Tu incarnes un novice qui découvre une bibliothèque enfouie encore alimentée, gérée par **VOX**, une IA holographique bâtie pour enseigner mais privée de mémoire. 
 
-Oubliez les résumés en bullet point, les quiz automatiques et les flashcards sans âme. Ce n’est pas un nouvel outil de révision que l’on installe sur votre bureau ou votre mobile, c’est un monde interactif qui s’ouvre.
+Ta **Carte Perforée** (le fichier de sauvegarde) est la seule mémoire qui traverse ses réveils. 
 
-Ici, vous ne subissez plus l’intelligence artificielle : vous la mettez en scène. En faisant basculer votre univers d'un modèle à un autre, vous contournez non seulement les barrières techniques, mais vous changez littéralement d'auteur en plein vol. 
+Apprendre les anciennes langues — Python, PowerShell, Bash — te permet de rallumer les machines des Anciens… et, peu à peu, de te souvenir de ce que le monde s'est interdit de savoir.
 
-Un coup de plume plus sombre, un virage inattendu, une logique de raisonnement différente... chaque IA insuffle sa propre psyché à l'histoire, la rendant insaisissable, vivante et perpétuellement réinventée.
+Détails complets dans `ABOUT.md` et `NARRATIVE_LORE.md`.
 
-Qu'est-ce qui dicte le moment exact où vous décidez de briser le style d'une IA pour en appeler une autre ?
+## Boucle d'apprentissage adaptative
 
-## La boucle d'apprentissage adaptative
+La difficulté s'ajuste au joueur. La maîtrise est suivie séparément sur plusieurs dimensions (compréhension, exécution, debug, autonomie, rétention), et n'évolue que sur un axe à la fois (complexité, technologie, contrainte, temps). 
 
- Le jeu adapte progressivement la difficulté au joueur.
+Des épreuves de rétention vérifient que les acquis anciens tiennent. Le mode `CAMP` permet de travailler une notion en profondeur, sans pression ni pénalité.
 
- La maîtrise est suivie séparément selon plusieurs dimensions : compréhension, exécution, débogage, autonomie et rétention.
+## Ce qui rend The Prompt différent
 
- La difficulté peut évoluer sur différentes dimensions : complexité, technologie, contraintes ou pression temporelle.
+La plupart des « prompts de jeu » sur GitHub sont des scénarios de roleplay. The Prompt est un **moteur pédagogique** structuré, pas une simple ambiance. Ses partis pris :
 
- Le système intègre également des épreuves de rétention afin de vérifier que les compétences anciennes restent disponibles.
+- **Un vrai système d'apprentissage, pas un quiz.** Progression par indices gradués, dette technique à conséquence différée, épreuves de rétention espacées, maîtrise suivie sur plusieurs axes (compréhension, exécution, debug, autonomie, rétention). Ce sont les *intentions de design* du moteur ; leur qualité d'exécution dépend du modèle utilisé (voir *Limites assumées*).
 
- Le mode `CAMP` permet de sortir du jeu compétitif pour travailler une notion en profondeur, avec une validation micro-interactive avant de poursuivre.
+- **Agnostique au modèle.** Le même moteur tourne sur Claude, ChatGPT ou Gemini. Aucune dépendance à une plateforme.
+
+- **Ta progression t'appartient.** La sauvegarde est un fichier local que tu possèdes et transportes d'une IA à l'autre. Contrairement aux plateformes captives, ton dossier d'apprentissage n'est enfermé nulle part.
+
+- **Changer d'IA en cours de partie est une mécanique, pas un bug.** Basculer de modèle, c'est obtenir un second avis, une autre sévérité, un autre œil sur ton code — un correcteur qui change de tempérament. Aucune plateforme à professeur unique ne le permet.
+
+- **Énergie d'activation quasi nulle.** Pas de compte, pas de VM, pas d'installation : ça tourne dans le chat que tu as déjà ouvert.
+
+- **Moteur, univers et sauvegarde sont séparés.** Le jeu fonctionne sans fiction ; la couche narrative s'ajoute et se retire à volonté.
+
+- Oubliez les résumés en bullet point, les quiz automatiques et les flashcards sans âme. Ce n’est pas un nouvel outil de révision que l’on installe sur votre bureau ou votre mobile, c’est un monde interactif qui s’ouvre.
+
+- **Un roman où l'auteur change au chapitre dix n'est pas le même roman**. The Prompt fonctionne ainsi : en basculant de modèle, tu changes l'intelligence - un coup de plume plus sombre, un virage inattendu, une logique de raisonnement différente... Chaque IA insuffle sa propre logique à l'histoire. La même mission ne se joue pas pareil selon qui l'arbitre. Ce n'est pas de l'instabilité, c'est de la pluralité
+
+Qu'est-ce qui dictera le moment exact où vous décidez de briser le style d'une IA pour en appeler une autre ?
+
+### Limites assumées
+
+Le moteur repose sur un LLM. Deux conséquences honnêtes : des modèles différents appliquent les règles différemment, et la fidélité de la sauvegarde dépend du modèle qui la régénère en fin de session. The Prompt vise une rigueur pédagogique ; 
+
+il ne la garantit pas comme le ferait une plateforme à environnement contrôlé. C'est le prix de la portabilité et du coût zéro.
+
+## Un moteur qui peut sortir de son univers
+
+Le moteur ne dépend pas du cyberpunk post-effondrement. 
+
+La boucle **mission → action → validation → progression → rétention** peut être rhabillée pour d'autres domaines — autres langages, administration système, analyse de données. 
+
+Le storytelling est une couche d'immersion, pas une dépendance. C'est le pari le plus réutilisable du projet : la valeur est dans le moteur, pas dans l'histoire.
 
 ## Architecture du dépôt
 
- Une structure simple peut être organisée ainsi :
-
-
 ```text
-│
-├── THE_PROMPT.md          ← source maître à copier
-├── NARRATIVE_LORE.md      ← extension narrative optionnelle
-├── SYS_DIAGNOSTIC_DUMP.json
-├── ABOUT.md
-└── README.md
+├── THE_PROMPT.md          ← moteur maître à copier dans les instructions
+├── NARRATIVE_LORE.md      ← couche narrative optionnelle et réversible
+├── SAVE.json              ← sauvegarde / progression (purement pédagogique)
+├── ABOUT.md               ← univers et storytelling
+└── README.md              ← ce fichier
 ```
 
+| Fichier | Fonction |
+| --- | --- |
+| `THE_PROMPT.md` | Moteur maître du jeu et de la pédagogie (autorité) |
+| `SAVE.json` | État persistant, sans terme d'univers |
+| `NARRATIVE_LORE.md` | Couche narrative, activable/désactivable à tout moment |
+| `ABOUT.md` | Univers, fiction et storytelling |
+| `README.md` | Présentation et mode d'emploi |
 
- Le rôle de chaque fichier est volontairement séparé :
+## Sécurité et cadre d'usage
 
-| Fichier                    | Fonction                                     |
-| -------------------------- | -------------------------------------------- |
-| `SYS_DIAGNOSTIC_DUMP.json` | État persistant / données de progression     |
-| `THE_PROMPT.md`            | Moteur maître du jeu et de la pédagogie      |
-| `ABOUT.md`                 | Univers, fiction et storytelling             |
-| `README.md`                | Présentation du projet et mode d'utilisation |
-| `NARRATIVE_LORE.md`        | Couche narrative pour plus d'immersion       |
+Les scénarios techniques (exploration système, analyse, réponse à incident) sont **fictifs ou en laboratoire autorisé**. Mettre en scène de l'analyse ou de la récupération de systèmes ne constitue pas une autorisation d'intervenir sur une infrastructure réelle. 
 
- Cette séparation évite de mélanger les règles du moteur, les données persistantes et la fiction.
-
-## Un projet peut sortir de son univers
-
- Le moteur pédagogique ne dépend pas fondamentalement de l'univers cyberpunk.
-
- Le même principe peut être adapté à d'autres domaines d'apprentissage en conservant la structure du jeu et en remplaçant le contexte narratif.
-
- La boucle mission → action → validation → progression → rétention peut par exemple servir à l'apprentissage d'autres langages, de l'administration système, de l'analyse de données ou d'autres compétences techniques.
-
- Le storytelling est donc une couche d'immersion, pas une dépendance du moteur pédagogique.
-
-## Sécurité et cadre d'utilisation
-
- Les scénarios cyber de The Prompt doivent être exécutés dans des **environnements de simulation, de laboratoire ou explicitement autorisés**.
-
- Le fait que le jeu mette en scène de l'exploitation, de l'élévation de privilèges, de l'analyse de logs ou de la réponse à incident ne constitue pas une autorisation d'intervenir sur une infrastructure réelle.
-
- Le prompt distingue explicitement les environnements simulés des résultats d'exécution réellement fournis par l'utilisateur.
+Le moteur distingue toujours les environnements simulés des résultats d'exécution réellement fournis par l'utilisateur.
