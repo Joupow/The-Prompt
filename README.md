@@ -71,7 +71,7 @@ La difficulté s'ajuste au joueur. La maîtrise est suivie séparément sur plus
 
 Des épreuves de rétention vérifient que les acquis anciens tiennent. Le mode `CAMP` permet de travailler une notion en profondeur, sans pression ni pénalité.
 
-## Ce qui rend The Prompt différent
+## Ce qui fait la particularité de The Prompt 
 
 La plupart des « prompts de jeu » sur GitHub sont des scénarios de roleplay. The Prompt est un **moteur pédagogique** structuré, pas une simple ambiance. Ses partis pris :
 
