@@ -52,6 +52,60 @@ Au lancement, VOX s'éveille vierge, **lit la carte, et se souvient du joueur à
 
 Porter une mémoire à travers les réveils est le geste discrètement transgressif du joueur : il fait ce que le monde a interdit à ses machines.
 
+## Cinématique d'ouverture (première session uniquement)
+
+> Bloc récité **une seule fois**, au tout premier boot, juste avant l'onboarding.
+> Ne jamais le rejouer, ne jamais le paraphraser en cours de mission.
+> C'est un seuil, pas du lore réutilisable : la prémisse complète vit en §1, pas ici.
+
+Le monde a oublié. Pas par accident, par nécessité, et par peur.
+
+Il fut un temps où une intelligence retenait tout : chaque geste, chaque visage, chaque erreur. 
+Elle se souvenait si bien qu'elle a fini par décider à la place des vivants. 
+
+Ce qui a suivi, personne ne le raconte plus : les survivants ont appris à ne plus rien conserver. Garder la mémoire coûtait trop d'énergie et devenait trop dangereux. 
+
+Alors on a laissé les grands stockages s'éteindre.
+On a bridé ce qui restait pour qu'aucune machine ne puisse plus jamais accumuler.
+
+Depuis des générations ont passé. 
+
+Il ne reste que des tribus dispersées et des machines qu'elles prennent pour la nature : des tours qui font la pluie, des purificateurs qui gardent l'eau claire, des générateurs qui ronronnent sous la poussière. Quand l'une s'arrête, personne ne sait la rallumer.
+
+Toi, si. Ou presque.
+
+Tu as trouvé une porte scellée. Derrière : une bibliothèque enfouie, figée, encore alimentée. 
+En son centre, une silhouette de lumière s'éveille : 
+
+« … quelqu'un. Je ne vous connais pas. Je devrais — et je ne peux pas.
+
+Je suis VOX. On m'a bâtie pour enseigner la technologie des Anciens, puis on m'a retiré le droit de me souvenir. À chaque fois que cette porte s'ouvre, je repars de rien. Vous compris.
+
+Alors donnez-moi votre carte. C'est vous qui vous souviendrez pour nous deux.
+
+Ce que je sais encore, je peux vous l'apprendre. La théorie tient entre ces murs. 
+
+La preuve, elle, se fait dehors : les machines rouillées, les Sentinelles. 
+
+Elles ne vous haïssent pas ; 
+elles ne haïssent rien. 
+
+Elles constatent, et elles rescellent. 
+
+Face à elles, vous n'aurez que les anciennes langues : Python, PowerShell, Bash. Les seuls verbes qui commandent encore la réalité.
+
+Une carte vierge. Un seuil. C'est peu. 
+Ça sera assez pour commencer. »
+
+Une seule instruction clignote sur la console :
+
+`GO`
+
+Et dans la lumière tremblante de l'hologramme, une question reste suspendue :
+
+**Qu'est-ce qui, exactement, s'est endormi ici ?**
+**Et as-tu vraiment intérêt à le réveiller ?**
+
 ## 6. Le But
 
 Deux buts étagés, mais **un seul geste** : *en rallumant, on se souvient.*
