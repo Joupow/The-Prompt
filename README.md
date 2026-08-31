@@ -45,7 +45,6 @@ C'est pourquoi la sauvegarde reste **purement pédagogique** : elle ne contient 
 - `DEBUG` : analyser un code fourni. · `STATS` / `CARTE` : progression / arbre des compétences.
 - `CONTINUE` : reprendre la mission en cours. · `STOP` : terminer proprement.
 - `CAMP` / `THÉORIE` : apprendre sans pénalité, avec micro-validation.
-- `SKIP` : au premier boot, sauter la cinématique et aller au diagnostic.
 - `INTRO` : (re)jouer la cinématique d'ouverture. Sans pénalité, hors progression.
 
 ## Sauvegarde
@@ -94,7 +93,7 @@ La plupart des « prompts de jeu » sur GitHub sont des scénarios de roleplay. 
 
 Qu'est-ce qui dictera le moment exact où vous décidez de briser le style d'une IA pour en appeler une autre ?
 
-### Limites assumées
+## Limites assumées
 
 Le moteur repose sur un LLM. Deux conséquences honnêtes : des modèles différents appliquent les règles différemment, et la fidélité de la sauvegarde dépend du modèle qui la régénère en fin de session. The Prompt vise une rigueur pédagogique ; 
 
