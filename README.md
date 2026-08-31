@@ -63,7 +63,7 @@ Ta **Carte Perforée** (le fichier de sauvegarde) est la seule mémoire qui trav
 
 Apprendre les anciennes langues — Python, PowerShell, Bash — te permet de rallumer les machines des Anciens… et, peu à peu, de te souvenir de ce que le monde s'est interdit de savoir.
 
-Détails complets dans `ABOUT.md` et `NARRATIVE_LORE.md`.
+Détails complets `NARRATIVE_LORE.md`.
 
 ## Boucle d'apprentissage adaptative
 
