@@ -113,17 +113,15 @@ Le storytelling est une couche d'immersion, pas une dépendance. C'est le pari l
 ├── THE_PROMPT.md          ← moteur maître à copier dans les instructions
 ├── NARRATIVE_LORE.md      ← couche narrative optionnelle et réversible
 ├── SAVE.json              ← sauvegarde / progression (purement pédagogique)
-├── ABOUT.md               ← univers et storytelling
 └── README.md              ← ce fichier
 ```
 
-| Fichier | Fonction |
-| --- | --- |
-| `THE_PROMPT.md` | Moteur maître du jeu et de la pédagogie (autorité) |
-| `SAVE.json` | État persistant, sans terme d'univers |
+| Fichier             | Fonction                                               |
+| ------------------- | ------------------------------------------------------ |
+| `THE_PROMPT.md`     | Moteur maître du jeu et de la pédagogie (autorité)     |
+| `SAVE.json`         | État persistant, sans terme d'univers                  |
 | `NARRATIVE_LORE.md` | Couche narrative, activable/désactivable à tout moment |
-| `ABOUT.md` | Univers, fiction et storytelling |
-| `README.md` | Présentation et mode d'emploi |
+| `README.md`         | Présentation et mode d'emploi                          |
 
 ## Sécurité et cadre d'usage
 
