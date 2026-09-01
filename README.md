@@ -6,6 +6,12 @@
 
 </div>
 
+<div align="center">
+
+**[🇫🇷 Jouer en français](./FR)** &nbsp;·&nbsp; **[🇬🇧 Play in english](./ENG)**
+
+</div>
+
 ---
 
 👋 Bienvenue sur mon *side quest project*.
@@ -36,8 +42,4 @@ Enjoy 🎮
 
 ---
 
-<div align="center">
 
-**[🇫🇷 Découvrir le projet](./FR)** &nbsp;·&nbsp; **[🇬🇧 Discover the project](./ENG)**
-
-</div>
