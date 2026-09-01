@@ -8,7 +8,7 @@
 
 <div align="center">
 
-**[Jouer](./FR)** &nbsp;·&nbsp; **[Play](./ENG)**
+**[Jouer](./FR/README_FR.md)** &nbsp;·&nbsp; **[Play](./ENG/README_ENG.md)**
 
 </div>
 
