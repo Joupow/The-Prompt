@@ -77,9 +77,9 @@ Most "game prompts" on GitHub are roleplay scenarios. The Prompt is a structured
 
 - **A real learning system, not a quiz.** Progression through graduated hints, technical debt with deferred consequences, spaced retention trials, mastery tracked across several axes (understanding, execution, debug, autonomy, retention). These are the engine's design intentions; how well they're carried out depends on the model you use (see _Assumed limits_).
 
-- **Switching AI mid-game is a mechanic, not a bug.** The same engine runs on Claude, ChatGPT or Gemini. Swapping models gets you a second opinion, a different severity, another eye on your code, a grader with a different temperament. No single-professor platform allows it.
+- **Why limit yourself to one coach?** The same engine runs on Claude, ChatGPT or Gemini. Swapping models gets you a second opinion, a different severity, another eye on your code, a grader with a different temperament. No single-professor platform allows it.
 
-- **Your progression is yours.** The save is a local file you own and carry from one AI to another. Unlike captive platforms, your learning record is locked away nowhere.
+- **You can switch AI without starting over.** The save is a local file you own and carry from one AI to another. Unlike captive platforms, your learning record is locked away nowhere.
 
 - **Near-zero activation energy.** No account, no VM, no install: it runs in the chat you already have open.
 
@@ -105,7 +105,7 @@ Storytelling is an immersion layer, not a dependency. That's the project's most 
 
 ## Contributing
 
-Session feedback, a bug, a mechanic idea or a remix for another domain: [`CONTRIBUTING.md`](CONTRIBUTING.md) spells out how to report, modify and test depending on the file you touch.
+Session feedback, a bug, a mechanic idea or a remix for another domain: [`CONTRIBUTING.md`](GITHUB/Code%20Quest/ENG/CONTRIBUTING.md) spells out how to report, modify and test depending on the file you touch.
 
 ## Repository architecture
 
@@ -113,7 +113,7 @@ Session feedback, a bug, a mechanic idea or a remix for another domain: [`CONTRI
  ├── THE_PROMPT.md          ← master engine to copy into the instructions
  ├── NARRATIVE_LORE.md      ← optional, reversible narrative layer
  ├── SAVE.json              ← save / progression (purely pedagogical)
- └── README.md              ← this file
+ ├── README.md              ← this file
  └── CONTRIBUTING.md        ← feedback, bugs, PR rules
 ```
 
