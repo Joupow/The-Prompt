@@ -14,7 +14,7 @@
 
 ---
 
-👋 Bienvenue sur mon *side quest project*.
+👋 Bienvenue sur mon side quest project.
 
 Au départ, je voulais juste rédiger un petit prompt pour m'apprendre à coder et automatiser.  
 
@@ -28,7 +28,7 @@ Enjoy 🎮
 
 ---
 
-👋 Welcome to my *side quest project*.
+👋 Welcome to my side quest project.
 
 At first, I just wanted to write little prompt to teach myself to code and automate.  
 
