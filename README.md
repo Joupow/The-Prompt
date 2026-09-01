@@ -30,7 +30,7 @@ Enjoy 🎮
 
 👋 Welcome to my side quest project.
 
-At first, I just wanted to write a little prompt to teach myself to code and automation.  
+At first, I just wanted to write a simple prompt to teach myself to code and to automate tasks.  
 
 One thing led to another, and it turned into a narrative mini-RPG for learning **Python, PowerShell and Linux** by playing right in the AI chat you already have open, with nothing to install.
 
