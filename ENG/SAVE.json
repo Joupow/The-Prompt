@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "profile": {
+    "onboarding_done": false,
+    "declared_level": null,
+    "level_confidence": "provisional",
+    "focus": null,
+    "format_preference": null,
+    "levels": {
+      "Python": null,
+      "PowerShell": null,
+      "Linux": null
+    }
+  },
+  "session": {
+    "duration_available": null,
+    "energy": null,
+    "status": "not_started",
+    "current_activity": null,
+    "activity_status": "not_started"
+  },
+  "skills": {
+    "Python": {},
+    "PowerShell": {},
+    "Linux": {}
+  },
+  "xp": {
+    "total_xp": 0
+  },
+  "next_step": {
+    "mission_ref": null,
+    "step": null
+  },
+  "pending_debt": [],
+  "incidents": [],
+  "recovery_mode": false,
+  "narrative": {}
+}
