@@ -16,7 +16,7 @@
 
 👋 Bienvenue sur mon *side quest project*.
 
-Au départ, je voulais juste un petit prompt pour m'apprendre à coder et automatiser.  
+Au départ, je voulais juste rédiger un petit prompt pour m'apprendre à coder et automatiser.  
 
 Et puis, de fil en aiguille, c'est devenu un mini-RPG narratif pour apprendre **Python, PowerShell et Linux** en jouant dans le chat IA que tu as déjà ouvert, sans rien installer.
 
@@ -30,7 +30,7 @@ Enjoy 🎮
 
 👋 Welcome to my *side quest project*.
 
-At first, I just wanted a little prompt to teach myself to code and automate.  
+At first, I just wanted to write little prompt to teach myself to code and automate.  
 
 One thing led to another, and it turned into a narrative mini-RPG for learning **Python, PowerShell and Linux** by playing right in the AI chat you already have open, with nothing to install.
 
