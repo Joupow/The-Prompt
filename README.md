@@ -2,7 +2,7 @@
 
 **The Prompt** transforme une simple conversation avec une IA en **moteur de jeu pédagogique** pour apprendre **Python, PowerShell et Linux**. 
 
-Le principe : apprendre en accomplissant des missions — analyser une situation, écrire du code, déboguer ses erreurs, décider sous contrainte — plutôt qu'en mémorisant.
+Le principe : apprendre en accomplissant des missions, analyser une situation, écrire du code, déboguer ses erreurs ou encore décider sous contrainte, plutôt qu'en mémorisant.
 
 Tout tient dans un fichier d'instructions à copier (`THE_PROMPT.md`) et un fichier de sauvegarde local (`SAVE.json`). 
 
@@ -33,7 +33,7 @@ SAVE.json                    Sauvegarde > dossier de travail
 
 Cette couche peut être **retirée ou remise à n'importe quel moment**, y compris en pleine progression. C'est un choix libre, session par session. 
 
-C'est pourquoi la sauvegarde reste **purement pédagogique** : elle ne contient aucun terme d'univers, donc ton état survit intact que le lore soit présent ou non. Tu peux enchaîner des sessions immersives, en faire une « à nu », puis réactiver l'univers — sans jamais casser ta progression.
+C'est pourquoi la sauvegarde reste **purement pédagogique** : elle ne contient aucun terme d'univers, donc ton état survit intact que le lore soit présent ou non. Tu peux enchaîner des sessions immersives, en faire une « à nu », puis réactiver l'univers sans jamais casser ta progression.
 
 ## Les commandes
 
@@ -55,13 +55,13 @@ Il reste volontairement **maigre** : plus il est court, plus le modèle le rég�
 
 ## L'univers
 
-Après un effondrement, l'humanité a régressé et survit près de machines qu'elle prend pour la nature. Se souvenir est devenu à la fois trop coûteux en énergie et trop dangereux — car l'intelligence qui avait tout retenu est ce qui a causé la catastrophe. 
+Après un effondrement, l'humanité a régressé et survit près de machines qu'elle prend pour la nature. Se souvenir est devenu à la fois trop coûteux en énergie et trop dangereux parce que l'intelligence qui avait tout retenu est ce qui a causé la catastrophe. 
 
 Tu incarnes un novice qui découvre une bibliothèque enfouie encore alimentée, gérée par **VOX**, une IA holographique bâtie pour enseigner mais privée de mémoire. 
 
 Ta **Carte Perforée** (le fichier de sauvegarde) est la seule mémoire qui traverse ses réveils. 
 
-Apprendre les anciennes langues — Python, PowerShell, Bash — te permet de rallumer les machines des Anciens… et, peu à peu, de te souvenir de ce que le monde s'est interdit de savoir.
+Apprendre les anciennes langues : Python, PowerShell, Bash te permet de rallumer les machines des Anciens… et, peu à peu, de te souvenir de ce que le monde s'est interdit de savoir.
 
 Détails complets `NARRATIVE_LORE.md`.
 
@@ -75,21 +75,17 @@ Des épreuves de rétention vérifient que les acquis anciens tiennent. Le mode 
 
 La plupart des « prompts de jeu » sur GitHub sont des scénarios de roleplay. The Prompt est un **moteur pédagogique** structuré, pas une simple ambiance. Ses partis pris :
 
-- **Un vrai système d'apprentissage, pas un quiz.** Progression par indices gradués, dette technique à conséquence différée, épreuves de rétention espacées, maîtrise suivie sur plusieurs axes (compréhension, exécution, debug, autonomie, rétention). Ce sont les *intentions de design* du moteur ; leur qualité d'exécution dépend du modèle utilisé (voir *Limites assumées*).
+- **Un vrai système d'apprentissage, pas un quiz.** Progression par indices gradués, dette technique à conséquence différée, épreuves de rétention espacées, maîtrise suivie sur plusieurs axes (compréhension, exécution, debug, autonomie, rétention). Ce sont les intentions de design du moteur ; leur qualité d'exécution dépend du modèle utilisé (voir _Limites assumées_).
 
-- **Agnostique au modèle.** Le même moteur tourne sur Claude, ChatGPT ou Gemini. Aucune dépendance à une plateforme.
+- **Changer d'IA en cours de partie est une mécanique, pas un bug.** Le même moteur tourne sur Claude, ChatGPT ou Gemini. Basculer de modèle, c'est obtenir un second avis, une autre sévérité, un autre œil sur ton code, un correcteur qui change de tempérament. Aucune plateforme à professeur unique ne le permet.
 
 - **Ta progression t'appartient.** La sauvegarde est un fichier local que tu possèdes et transportes d'une IA à l'autre. Contrairement aux plateformes captives, ton dossier d'apprentissage n'est enfermé nulle part.
-
-- **Changer d'IA en cours de partie est une mécanique, pas un bug.** Basculer de modèle, c'est obtenir un second avis, une autre sévérité, un autre œil sur ton code — un correcteur qui change de tempérament. Aucune plateforme à professeur unique ne le permet.
 
 - **Énergie d'activation quasi nulle.** Pas de compte, pas de VM, pas d'installation : ça tourne dans le chat que tu as déjà ouvert.
 
 - **Moteur, univers et sauvegarde sont séparés.** Le jeu fonctionne sans fiction ; la couche narrative s'ajoute et se retire à volonté.
 
-- Oubliez les résumés en bullet point, les quiz automatiques et les flashcards sans âme. Ce n’est pas un nouvel outil de révision que l’on installe sur votre bureau ou votre mobile, c’est un monde interactif qui s’ouvre.
-
-- **Un roman où l'auteur change au chapitre dix n'est pas le même roman**. The Prompt fonctionne ainsi : en basculant de modèle, tu changes l'intelligence - un coup de plume plus sombre, un virage inattendu, une logique de raisonnement différente... Chaque IA insuffle sa propre logique à l'histoire. La même mission ne se joue pas pareil selon qui l'arbitre. Ce n'est pas de l'instabilité, c'est de la pluralité
+- Un roman où l'auteur change au chapitre dix n'est pas le même roman. The Prompt fonctionne ainsi : en basculant de modèle, tu changes l'intelligence. Un coup de plume plus sombre, un virage inattendu, une logique de raisonnement différente. La même mission ne se joue pas pareil selon qui l'arbitre. Ce n'est pas de l'instabilité, c'est de la pluralité.
 
 Qu'est-ce qui dictera le moment exact où vous décidez de briser le style d'une IA pour en appeler une autre ?
 
@@ -103,7 +99,7 @@ il ne la garantit pas comme le ferait une plateforme à environnement contrôlé
 
 Le moteur ne dépend pas du cyberpunk post-effondrement. 
 
-La boucle **mission → action → validation → progression → rétention** peut être rhabillée pour d'autres domaines — autres langages, administration système, analyse de données. 
+La boucle **mission → action → validation → progression → rétention** peut être rhabillée pour d'autres domaines, autres langages, administration système, analyse de données. 
 
 Le storytelling est une couche d'immersion, pas une dépendance. C'est le pari le plus réutilisable du projet : la valeur est dans le moteur, pas dans l'histoire.
 

@@ -2,8 +2,6 @@
 
 Merci de l'intérêt. Voici comment aider selon ce que tu veux faire.
 
----
-
 ## Tu as testé le moteur → Donne-nous ton retour
 
 C'est la contribution la plus utile. Ouvre une **Discussion** (onglet *Discussions* du dépôt) dans la catégorie qui correspond :
@@ -31,7 +29,7 @@ Joins ton `SAVE.json` si le bug est lié à la progression. Retire les données 
 
 Le dépôt contient trois types de fichiers. Les règles diffèrent selon le fichier touché :
 
-### `THE_PROMPT.md` — Moteur pédagogique (autorité)
+### `THE_PROMPT.md` : Moteur pédagogique (autorité)
 
 Toute modification ici doit :
 - Respecter la limite de ~8 000 caractères (contrainte ChatGPT)
@@ -40,11 +38,11 @@ Toute modification ici doit :
 
 Ouvre d'abord une Discussion pour valider l'intention avant d'écrire du code.
 
-### `NARRATIVE_LORE.md` — Couche narrative
+### `NARRATIVE_LORE.md` : Couche narrative
 
 Les propositions de lore sont bienvenues. Règle stricte : le lore **explique pourquoi**, le moteur **définit comment**. Une PR narrative ne doit jamais modifier le comportement du moteur.
 
-### `SAVE.json` — Schéma de sauvegarde
+### `SAVE.json` : Schéma de sauvegarde
 
 Modifications de schéma uniquement si rétrocompatibles. Un champ ajouté ne doit pas casser un save existant. Inclure un exemple de migration dans la PR.
 
@@ -71,4 +69,4 @@ Testé sur : [modèles utilisés]
 
 ## Une dernière chose
 
-The Prompt est un **moteur**, pas un jeu figé. Si tu l'as adapté à un autre domaine — administration réseau, SQL, DevOps — partage-le dans les Discussions. C'est exactement ce que le projet espère inspirer.
+The Prompt est un **moteur**, pas un jeu figé. Si tu l'as adapté à un autre domaine : administration réseau, SQL, DevOps etc.. partage-le dans les Discussions. C'est exactement ce que le projet espère inspirer.
