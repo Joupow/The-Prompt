@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[**🇫🇷 Jouer en français**](./FR) · [**🇬🇧 Play in English**](./ENG)
+**[Jouer](./FR)** &nbsp;·&nbsp; **[Play](./ENG)**
 
 </div>
 
