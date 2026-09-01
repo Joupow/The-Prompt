@@ -1,4 +1,4 @@
-# The AI forgets. You don't.
+# The Lore : In a world that forgot, you remember.
 
 > Couche narrative optionnelle.
 > À placer dans le dossier de travail, aux côtés de `SAVE.json`.

@@ -1,4 +1,4 @@
-# The Prompt : one quest, any IA
+# The Prompt : one quest, any AI
 
 **The Prompt** transforme une simple conversation avec une IA en **moteur de jeu pédagogique** pour apprendre **Python, PowerShell et Linux**. 
 
@@ -103,13 +103,18 @@ La boucle **mission → action → validation → progression → rétention** p
 
 Le storytelling est une couche d'immersion, pas une dépendance. C'est le pari le plus réutilisable du projet : la valeur est dans le moteur, pas dans l'histoire.
 
+## Contribuer
+
+Retour de session, bug, idée de mécanique ou remix pour un autre domaine : [`CONTRIBUTING.md`](CONTRIBUTING.md) détaille comment signaler, modifier et tester selon le fichier touché.
+
 ## Architecture du dépôt
 
 ```text
-├── THE_PROMPT.md          ← moteur maître à copier dans les instructions
-├── NARRATIVE_LORE.md      ← couche narrative optionnelle et réversible
-├── SAVE.json              ← sauvegarde / progression (purement pédagogique)
-└── README.md              ← ce fichier
+ ├── THE_PROMPT.md          ← moteur maître à copier dans les instructions
+ ├── NARRATIVE_LORE.md      ← couche narrative optionnelle et réversible
+ ├── SAVE.json              ← sauvegarde / progression (purement pédagogique)
+ └── README.md              ← ce fichier
+ └── CONTRIBUTING.md        ← retours, bugs, règles de PR
 ```
 
 | Fichier             | Fonction                                               |
@@ -118,6 +123,7 @@ Le storytelling est une couche d'immersion, pas une dépendance. C'est le pari l
 | `SAVE.json`         | État persistant, sans terme d'univers                  |
 | `NARRATIVE_LORE.md` | Couche narrative, activable/désactivable à tout moment |
 | `README.md`         | Présentation et mode d'emploi                          |
+| `CONTRIBUTING.md`   | Retours de session, bugs, règles de contribution       |
 
 ## Sécurité et cadre d'usage
 
