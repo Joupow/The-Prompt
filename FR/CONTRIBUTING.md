@@ -27,7 +27,7 @@ Joins ton `SAVE.json` si le bug est lié à la progression. Retire les données 
 
 ## Tu veux modifier les fichiers → Ouvre une Pull Request
 
-Le dépôt contient trois types de fichiers. Les règles diffèrent selon le fichier touché :
+Le dépôt contient 4 types de fichiers. Les règles diffèrent selon le fichier touché :
 
 ### `THE_PROMPT.md` : Moteur pédagogique (autorité)
 
@@ -46,7 +46,7 @@ Les propositions de lore sont bienvenues. Règle stricte : le lore **explique po
 
 Modifications de schéma uniquement si rétrocompatibles. Un champ ajouté ne doit pas casser un save existant. Inclure un exemple de migration dans la PR.
 
-### `README.md`
+### `README.md` : Présentation et mode d'emploi
 
 Corrections, clarifications, traductions : bienvenues sans discussion préalable.
 
