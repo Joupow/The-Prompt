@@ -77,15 +77,15 @@ La plupart des « prompts de jeu » sur GitHub sont des scénarios de roleplay. 
 
 - **Un vrai système d'apprentissage, pas un quiz.** Progression par indices gradués, dette technique à conséquence différée, épreuves de rétention espacées, maîtrise suivie sur plusieurs axes (compréhension, exécution, debug, autonomie, rétention). Ce sont les intentions de design du moteur ; leur qualité d'exécution dépend du modèle utilisé (voir _Limites assumées_).
 
-- **Changer d'IA en cours de partie est une mécanique, pas un bug.** Le même moteur tourne sur Claude, ChatGPT ou Gemini. Basculer de modèle, c'est obtenir un second avis, une autre sévérité, un autre œil sur ton code, un correcteur qui change de tempérament. Aucune plateforme à professeur unique ne le permet.
+- **Pourquoi se contenter d’un seul coach ?** Le même moteur tourne sur Claude, ChatGPT ou Gemini. Basculer de modèle, c'est obtenir un second avis, une autre sévérité, un autre œil sur ton code, un correcteur qui change de tempérament. Aucune plateforme à professeur unique ne le permet.
 
-- **Ta progression t'appartient.** La sauvegarde est un fichier local que tu possèdes et transportes d'une IA à l'autre. Contrairement aux plateformes captives, ton dossier d'apprentissage n'est enfermé nulle part.
+- **Tu peux changer d’IA sans recommencer.** La sauvegarde est un fichier local que tu possèdes et transportes d'une IA à l'autre. Contrairement aux plateformes captives, ton dossier d'apprentissage n'est enfermé nulle part.
 
 - **Énergie d'activation quasi nulle.** Pas de compte, pas de VM, pas d'installation : ça tourne dans le chat que tu as déjà ouvert.
 
 - **Moteur, univers et sauvegarde sont séparés.** Le jeu fonctionne sans fiction ; la couche narrative s'ajoute et se retire à volonté.
 
-- Un roman où l'auteur change au chapitre dix n'est pas le même roman. The Prompt fonctionne ainsi : en basculant de modèle, tu changes l'intelligence. Un coup de plume plus sombre, un virage inattendu, une logique de raisonnement différente. La même mission ne se joue pas pareil selon qui l'arbitre. Ce n'est pas de l'instabilité, c'est de la pluralité.
+- **Un roman où l'auteur change au chapitre dix n'est pas le même roman.** The Prompt fonctionne ainsi : en basculant de modèle, tu changes l'intelligence. Un coup de plume plus sombre, un virage inattendu, une logique de raisonnement différente. La même mission ne se joue pas pareil selon qui l'arbitre. Ce n'est pas de l'instabilité, c'est de la pluralité.
 
 Qu'est-ce qui dictera le moment exact où vous décidez de briser le style d'une IA pour en appeler une autre ?
 
@@ -105,7 +105,7 @@ Le storytelling est une couche d'immersion, pas une dépendance. C'est le pari l
 
 ## Contribuer
 
-Retour de session, bug, idée de mécanique ou remix pour un autre domaine : [`CONTRIBUTING.md`](CONTRIBUTING.md) détaille comment signaler, modifier et tester selon le fichier touché.
+Retour de session, bug, idée de mécanique ou remix pour un autre domaine : [`CONTRIBUTING.md`](GITHUB/Code%20Quest/FR/CONTRIBUTING.md) détaille comment signaler, modifier et tester selon le fichier touché.
 
 ## Architecture du dépôt
 
@@ -113,7 +113,7 @@ Retour de session, bug, idée de mécanique ou remix pour un autre domaine : [`C
  ├── THE_PROMPT.md          ← moteur maître à copier dans les instructions
  ├── NARRATIVE_LORE.md      ← couche narrative optionnelle et réversible
  ├── SAVE.json              ← sauvegarde / progression (purement pédagogique)
- └── README.md              ← ce fichier
+ ├── README.md              ← ce fichier
  └── CONTRIBUTING.md        ← retours, bugs, règles de PR
 ```
 
