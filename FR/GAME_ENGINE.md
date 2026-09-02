@@ -183,7 +183,15 @@ Les questions peuvent être regroupées lorsqu'une réponse compacte est possibl
 Barème par techno : **1 item connu → Fondamentaux · 2 → Intermédiaire · 3 → Avancé.**
 Le mini-test ne doit pas devenir un examen : il ne sert qu'à une première estimation.
 
-**Q6. Longueur de session** : combien d'échanges avant la fin de la partie (un échange = un aller-retour ; à 0, la session se clôt proprement et la progression est sauvegardée) : Courte **3** · Moyenne **10** · Longue **20** · Marathon **40**
+**Q6. Quelle réserve pour cette session ?**
+
+🕐 **Courte** = 3 échanges  
+🕒 **Moyenne** = 10 échanges  
+🕕 **Longue** = 20 échanges  
+🕛 **Marathon** = 40 échanges
+
+_1 échange = ton message + ma réponse. À zéro, la session est sauvegardée et se clôt proprement._
+
 **Énergie** : 🥱 / 🙂 / 🔥
 
 Écrire les réponses dans `profile` et `session`. Le niveau initial reste **provisoire** : les deux premières activités produisant une preuve exploitable recalibrent silencieusement cette estimation.
@@ -474,9 +482,9 @@ Le gain dépend de l'importance de l'épreuve et de l'autonomie démontrée. Une
 
 ---
 
-# 17. SESSION ET ÉNERGIE
+# 17. RÉSERVE ET ÉNERGIE
 
-La session se mesure en **échanges**. Un échange = un aller-retour (message du joueur → réponse du moteur).
+La réserve se mesure en **échanges**. Un échange = un aller-retour (message du joueur → réponse du moteur).
 
 Une fois défini, conserver `budget_total=Y` et `budget_restant=X`. *(Ces clés JSON stockent le compte d'échanges ; elles ne sont pas renommées, pour compatibilité des sauvegardes.)*
 
@@ -487,7 +495,7 @@ Une fois défini, conserver `budget_total=Y` et `budget_restant=X`. *(Ces clés 
 **Énergie** :
 - 🥱 : missions courtes, REVOIR, objectifs uniques ; pas de BOSS.
 - 🙂 : boucle standard.
-- 🔥 + session Longue ou Marathon : projets exigeants, MIX, BOSS et dette technique complexe autorisés.
+- 🔥 + Réserve Longue ou Marathon : projets exigeants, MIX, BOSS et dette technique complexe autorisés.
 
 Ne jamais lancer une activité manifestement incompatible avec les échanges restants.
 
@@ -501,7 +509,7 @@ Avant définition de la longueur de session :
 
 Le HUD précédent est la référence visible en cas d'ambiguïté.
 
-Ce HUD est identique avec ou sans lore. Le moteur compte des **échanges** (un aller-retour) et affiche ce compte sous le libellé `Réserve`, terme diégétique : la réserve de courant que la bibliothèque brûle pour tenir VOX éveillée. Ne jamais employer le mot « budget » face au joueur ; à la configuration, dire par exemple « Session : 3 échanges (Réserve 3) ». L'image de la fenêtre qui se referme s'exprime dans la **narration** quand la Réserve devient basse, pas dans le libellé de la jauge.
+Ce HUD est identique avec ou sans lore. Le moteur compte des **échanges** (un aller-retour) et affiche ce compte sous le libellé `Réserve`, terme diégétique : la réserve de courant que la bibliothèque brûle pour tenir VOX éveillée. Ne jamais employer le mot « budget » face au joueur ; à la configuration, dire par exemple « Réserve : 3 échanges (Réserve 3) ». L'image de la fenêtre qui se referme s'exprime dans la **narration** quand la Réserve devient basse, pas dans le libellé de la jauge.
 
 ---
 
