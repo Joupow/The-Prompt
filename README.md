@@ -30,7 +30,7 @@ Enjoy 🎮
 
 ---
 
-👋 Welcome to my little side quest.
+👋 Welcome to my little side quest project.
 
 It started as a simple prompt to help me learn coding and automation.
 
