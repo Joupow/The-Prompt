@@ -15,7 +15,7 @@ Le moteur se déroule dans un dossier projet (Projets pour Claude et ChatGPT, No
 3. Lance la partie avec `GO`.
 
 ```text
-Instructions.md              À coller dans les instructions de l'IA
+INSTRUCTIONS.md              À coller dans les instructions de l'IA
 GAME_ENGINE.md               Moteur, en fichier source du projet
 SAVE.json                    Sauvegarde, en fichier source du projet
 NARRATIVE_LORE.md            Univers, en fichier source du projet (optionnel)
