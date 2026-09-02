@@ -46,11 +46,9 @@ Le HUD la rappelle à la fin de chaque réponse :
 
 `[🔋 Réserve : X/Y | ⭐ XP : Z]`
 
-À zéro, la session se clôt proprement et ta progression est sauvegardée. Rien n’est perdu : tu reprends la fois suivante en réinjectant ta sauvegarde.
+À zéro, la session se clôt proprement, ta progression est sauvegardée dans le chat. 
 
-Si tu ne veux pas t’arrêter, tu peux aussi utiliser `CONTINUE` ou demander à ajouter de la Réserve.
-
-Ou sinon tu reprends la fois suivante en réinjectant ta sauvegarde.
+Si tu ne veux pas t’arrêter, tu peux utiliser `CONTINUE` ou demander à ajouter de la Réserve.
 
 Avec la couche narrative, la Réserve devient la fenêtre pendant laquelle VOX reste éveillée avant que la bibliothèque ne la laisse retomber. Sans elle, c'est simplement ta jauge de tours.
 
