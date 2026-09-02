@@ -16,7 +16,7 @@ Le moteur se déroule dans un dossier projet (Projets pour Claude et ChatGPT, No
 
 ```text
 Instructions.md              À coller dans les instructions de l'IA
-GAME_ENGINE.md                    Moteur, en fichier source du projet
+GAME_ENGINE.md               Moteur, en fichier source du projet
 SAVE.json                    Sauvegarde, en fichier source du projet
 NARRATIVE_LORE.md            Univers, en fichier source du projet (optionnel)
 ```
@@ -29,17 +29,26 @@ Cette couche se retire ou se remet à n'importe quel moment, y compris en pleine
 
 Ton état survit donc intact, que le lore soit là ou non. Tu peux enchaîner des sessions immersives, en faire une « à nu », puis réactiver l'univers sans jamais casser ta progression.
 
-## La Réserve : la longueur d'une session
+## La Réserve : la durée d'une session
 
-Au lancement, tu choisis la longueur de ta session : Courte (3), Moyenne (10), Longue (20) ou Marathon (40). Cette valeur, c'est la **Réserve** : le nombre d'échanges (un aller-retour question / réponse) dont tu disposes avant la fin de la partie.
+Au lancement, tu choisis ta **Réserve** qui définit la durée d'une session :
 
-Chaque tour de jeu consomme une unité. Les commandes d'affichage (`STATS`, `CARTE`, `INTRO`, `STOP`, `EXPORT_SAVE`) sont gratuites. Le HUD la rappelle à la fin de chaque réponse :
+- **Courte** = 3 échanges
+- **Moyenne** = 10 échanges
+- **Longue** = 20 échanges
+- **Marathon** = 40 échanges
+    
+Un échange = **ton message + la réponse de l’IA**. Chaque échange consomme une unité de Réserve.
+
+Les commandes d'affichage (`STATS`, `CARTE`, `INTRO`, `STOP`, `EXPORT_SAVE`) sont gratuites. 
+
+Le HUD la rappelle à la fin de chaque réponse :
 
 `[🔋 Réserve : X/Y | ⭐ XP : Z]`
 
-À zéro, la session se clôt proprement et ta progression est sauvegardée : rien n'est perdu.
+À zéro, la session se clôt proprement et ta progression est sauvegardée. Rien n’est perdu : tu reprends la fois suivante en réinjectant ta sauvegarde.
 
-Ce n'est pas un mur. Si tu es lancé et que tu veux continuer, relance simplement une session : ta carte reprend là où tu en étais, et tu choisis une longueur plus grande. Tu peux aussi viser large dès le départ (Longue, Marathon) si tu sais que tu as le temps.
+Si tu ne veux pas t’arrêter, tu peux aussi utiliser `CONTINUE` ou demander à ajouter de la Réserve.
 
 Ou sinon tu reprends la fois suivante en réinjectant ta sauvegarde.
 
