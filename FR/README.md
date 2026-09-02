@@ -136,8 +136,8 @@ Retour de session, bug, idée de mécanique ou remix pour un autre domaine : [`C
 
 | Fichier             | Fonction                                                 |
 | ------------------- | -------------------------------------------------------- |
-| `Instructions.md`   | Amorçage collé dans les instructions ; lance le BOOT     |
-| `GAME_ENGINE.md`         | Moteur maître du jeu et de la pédagogie (autorité)       |
+| `INSTRUCTIONS.md`   | Amorçage collé dans les instructions ; lance le BOOT     |
+| `GAME_ENGINE.md`    | Moteur maître du jeu et de la pédagogie (autorité)       |
 | `SAVE.json`         | État persistant, sans terme d'univers hors `narrative`   |
 | `NARRATIVE_LORE.md` | Couche narrative, activable / désactivable à tout moment |
 | `README.md`         | Présentation et mode d'emploi                            |
