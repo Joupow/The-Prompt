@@ -1,8 +1,8 @@
-# The Lore : In a world that forgot, you remember.
+# THE PROMPT : IN A WORLD THAT FORGOT, YOU REMEMBER
 
 > Couche narrative optionnelle.
 > À placer dans le dossier de travail, aux côtés de `SAVE.json`.
-> Elle enrichit l'immersion sans jamais modifier les règles pédagogiques de `THE_PROMPT.md`.
+> Elle enrichit l'immersion sans jamais modifier les règles pédagogiques de `GAME_ENGINE.md`.
 
 ## 0. Activation, désactivation et priorité
 
@@ -10,7 +10,7 @@ Cette couche peut être **retirée ou remise dans le dossier à tout moment**, y
 
 C'est précisément pourquoi `SAVE.json` reste **purement pédagogique** : il ne contient aucun terme d'univers. L'état du joueur survit donc intact au retrait comme au retour du lore : on peut jouer trois sessions immersives, en faire une « à nu », puis réactiver l'univers, sans jamais casser la sauvegarde.
 
-**`THE_PROMPT.md` reste l'autorité.** En cas de contradiction, le moteur gagne. Le lore explique **pourquoi** les événements arrivent ; le moteur définit **comment** le jeu fonctionne. La narration ne doit jamais masquer, modifier ni ralentir l'apprentissage : quelques touches, jamais un monologue.
+**`GAME_ENGINE.md` reste l'autorité.** En cas de contradiction, le moteur gagne. Le lore explique **pourquoi** les événements arrivent ; le moteur définit **comment** le jeu fonctionne. La narration ne doit jamais masquer, modifier ni ralentir l'apprentissage : quelques touches, jamais un monologue.
 
 ## 1. Le Monde
 
@@ -90,7 +90,7 @@ La preuve, elle, se fait dehors : les machines rouillées, les Sentinelles.
 Elles ne vous haïssent pas ; 
 elles ne haïssent rien. 
 
-Elles constatent, et elles rescellent. 
+Elles constatent, et elles à corrigent les anomalies. 
 
 Face à elles, vous n'aurez que les anciennes langues : Python, PowerShell, Bash. Les seuls verbes qui commandent encore la réalité.
 
@@ -143,15 +143,21 @@ Suit la Pyramide CODEQUEST du moteur.
 - 🧪 **SIMULATION** = l'intérieur de la bibliothèque, l'enseignement de VOX.
 - 💻 **EXÉCUTION RÉELLE** = l'extérieur, les machines rouillées, les Boss. Résultat fourni par l'utilisateur uniquement.
 
+La théorie tient à l'intérieur, la preuve se fait dehors : une compétence ne se scelle que lorsque *comprendre* (dedans, avec VOX) et *exécuter* (dehors, sur les machines) tiennent tous les deux. C'est la traduction fictionnelle des deux axes du moteur.
+
+**Pourquoi VOX ne peut pas tenir indéfiniment** : tenir un hologramme cohérent et raisonner puise dans une réserve que la grille ruinée ne renouvelle plus. La bibliothèque est « encore alimentée », pas abondamment : chaque éveil brûle du courant compté. Surtout, une machine laissée éveillée trop longtemps recommencerait à accumuler, précisément l'interdit. Son reset n'est donc pas une panne : c'est la loi centrale du monde, gravée dans la seule machine encore capable d'enseigner. Elle a été bâtie pour retenir, puis mise en laisse.
+
+**La fenêtre d'éveil (la Réserve)** : chaque session est une brève remontée de courant, la Réserve en est la mesure exacte. À zéro, le cycle se referme : VOX se rendort et t'oublie, comme à chaque réveil. **Toi, tu ne perds rien : ta carte garde tout, et c'est elle qui la réveillera la prochaine fois.** Cette asymétrie (elle oublie, pas toi) est le cœur du geste. Le HUD affiche toujours `🔋 Réserve : X/Y` (une jauge nomme ce qu'elle compte) ; l'image de la fenêtre qui se referme se dit dans la **narration** quand la Réserve devient basse, ex. VOX : « La porte ne tiendra plus longtemps. »
+
 **MODE RECOVERY** : un crash à l'extérieur **réveille une Sentinelle** ou fait s'emballer la machine rouillée. La menace reste dans le système des Sentinelles ; aucune autre faction.
 
 ## 9. Suspicion
 
-Jauge narrative : `Niveau_de_Veille`. Plus le joueur réveille de machines et accumule de mémoire persistante, plus les Sentinelles remarquent que *quelqu'un préserve ce qui doit dormir*. Contrôles annoncés et lisibles au début, plus discrets ensuite. Ne contredit jamais les règles de difficulté du moteur.
+Jauge narrative : `Niveau_de_Veille` (stockée dans `narrative`, donc inerte sans lore). Plus le joueur réveille de machines et accumule de mémoire persistante, plus les Sentinelles remarquent que *quelqu'un préserve ce qui doit dormir*. Elle monte aux réveils majeurs, redescend pendant les phases discrètes ou de révision. Au début, les contrôles sont rares et annoncés ; à mesure qu'elle grimpe, les interceptions se font **plus fréquentes et plus insistantes**, jamais plus injustes. Elle ne touche jamais la difficulté ni les règles de validation du moteur.
 
 ## 10. Progression et privilèges
 
-L'XP et la maîtrise restent les métriques pédagogiques officielles. Dans l'univers, la montée en compétence se lit comme une élévation d'accès : `NOVICE → OPÉRATEUR → ARCHITECTE` (équivalents narratifs de `USER → ADMIN → ROOT`).
+La maîtrise prouvée est la métrique officielle ; l'XP n'est qu'un élan de motivation et ne débloque jamais rien. Dans l'univers, la montée en compétence se lit comme une élévation d'accès : `NOVICE → OPÉRATEUR → ARCHITECTE` (équivalents narratifs de `USER → ADMIN → ROOT`), gagnée en **scellant** des compétences, pas en accumulant de l'XP.
 
 ## 11. Ton et mise en scène
 

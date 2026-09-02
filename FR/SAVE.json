@@ -1,9 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "profile": {
     "onboarding_done": false,
+    "intro_seen": false,
     "declared_level": null,
     "level_confidence": "provisional",
+    "environnement": null,
     "focus": null,
     "format_preference": null,
     "levels": {
@@ -13,7 +15,8 @@
     }
   },
   "session": {
-    "duration_available": null,
+    "budget_total": null,
+    "budget_restant": null,
     "energy": null,
     "status": "not_started",
     "current_activity": null,
@@ -22,17 +25,24 @@
   "skills": {
     "Python": {},
     "PowerShell": {},
-    "Linux": {}
+    "Linux": {},
+    "Cyber": {}
   },
   "xp": {
     "total_xp": 0
   },
   "next_step": {
     "mission_ref": null,
-    "step": null
+    "step": null,
+    "checkpoint": null
   },
   "pending_debt": [],
   "incidents": [],
   "recovery_mode": false,
-  "narrative": {}
+  "narrative": {
+    "context": null,
+    "events": [],
+    "fragments_revealed": [],
+    "niveau_de_veille": 0
+  }
 }
