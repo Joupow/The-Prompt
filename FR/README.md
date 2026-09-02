@@ -126,8 +126,8 @@ Retour de session, bug, idée de mécanique ou remix pour un autre domaine : [`C
 ## Architecture du dépôt
 
 ```text
- ├── Instructions.md        ← amorçage, à coller dans les instructions de l'IA
- ├── GAME_ENGINE.md              ← moteur maître (fichier source, autorité)
+ ├── INSTRUCTIONS.md        ← amorçage, à coller dans les instructions de l'IA
+ ├── GAME_ENGINE.md         ← moteur maître (fichier source, autorité)
  ├── NARRATIVE_LORE.md      ← couche narrative optionnelle et réversible
  ├── SAVE.json              ← sauvegarde / progression (purement pédagogique)
  ├── README.md              ← ce fichier
